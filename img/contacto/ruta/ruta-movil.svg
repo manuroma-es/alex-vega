@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+<defs>
+  <filter id="rutaGlowBlur" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="6"/>
+  </filter>
+</defs>
+<path id="ruta-glow" d="M 50,240 L 180,240 L 180,700 L 540,700 L 540,1010 C 500,1040 452,1070 452,1100 C 452,1160 490,1188 540,1188 C 590,1188 628,1160 628,1100 L 628,1100 L 900,1100 L 900,1430 L 540,1430" fill="none" stroke="#C6FF00" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity="0.35" filter="url(#rutaGlowBlur)"/>
+<path id="ruta" d="M 50,240 L 180,240 L 180,700 L 540,700 L 540,1010 C 500,1040 452,1070 452,1100 C 452,1160 490,1188 540,1188 C 590,1188 628,1160 628,1100 L 628,1100 L 900,1100 L 900,1430 L 540,1430" fill="none" stroke="#C6FF00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

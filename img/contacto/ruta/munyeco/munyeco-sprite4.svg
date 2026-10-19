@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="600" height="160">
+<defs>
+  <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="2.2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<g transform="translate(0,0)" filter="url(#glow)">
+<circle cx="60" cy="34.0" r="15" fill="#C6FF00"/>
+<path d="M 62.0,48.0 L 58.8,100.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round"/>
+<path d="M 58.8,100.0 L 40.8,118.0 L 24.8,136.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 58.8,100.0 L 84.8,122.0 L 100.8,148.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,48.0 L 84.0,67.4 L 102.0,85.6" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,48.0 L 42.0,69.4 L 28.0,93.6" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g transform="translate(120,0)" filter="url(#glow)">
+<circle cx="60" cy="34.0" r="15" fill="#C6FF00"/>
+<path d="M 62.0,48.0 L 60.0,100.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round"/>
+<path d="M 60.0,100.0 L 72.0,112.0 L 90.0,120.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 60.0,100.0 L 66.0,124.0 L 60.0,148.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,48.0 L 68.0,73.4 L 66.0,95.6" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,48.0 L 52.0,73.4 L 54.0,95.6" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g transform="translate(240,0)" filter="url(#glow)">
+<circle cx="60" cy="33.0" r="15" fill="#C6FF00"/>
+<path d="M 62.0,46.8 L 61.2,94.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round"/>
+<path d="M 61.2,94.0 L 91.2,108.0 L 109.2,124.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 61.2,94.0 L 45.2,118.0 L 35.2,142.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,46.8 L 38.0,64.2 L 22.0,86.2" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,46.8 L 86.0,60.2 L 106.0,74.2" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g transform="translate(360,0)" filter="url(#glow)">
+<circle cx="60" cy="34.0" r="15" fill="#C6FF00"/>
+<path d="M 62.0,48.0 L 58.8,100.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round"/>
+<path d="M 58.8,100.0 L 84.8,122.0 L 100.8,148.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 58.8,100.0 L 40.8,118.0 L 24.8,136.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,48.0 L 42.0,69.4 L 28.0,93.6" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,48.0 L 84.0,67.4 L 102.0,85.6" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g transform="translate(480,0)" filter="url(#glow)">
+<circle cx="60" cy="34" r="15" fill="#C6FF00"/>
+<path d="M 60,50 L 60,98" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round"/>
+<path d="M 60,98 L 52,124 L 50,148" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 60,98 L 68,124 L 70,148" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 60,50 L 36,40 L 22,14" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 60,50 L 84,40 L 98,14" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

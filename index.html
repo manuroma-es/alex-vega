@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <!-- MARCA provisional: "ÁLEX VEGA". Se cambia en js/main.js (CONFIG.MARCA); ver README.md -->
+  <title>Álex Vega · Entrenador personal en Jerez de la Frontera | Resultados reales</title>
+  <meta name="description" content="Entrenador personal en Jerez de la Frontera para perder peso, ganar músculo o empezar de cero: técnica, rutina a tu medida y pautas de alimentación. Primera valoración gratis.">
+  <!-- Cambiar "nueva-demo" por el nombre definitivo al publicar -->
+  <link rel="canonical" href="https://manuroma-es.github.io/nueva-demo/">
+  <meta property="og:title" content="Álex Vega · Entrenador personal en Jerez de la Frontera">
+  <meta property="og:description" content="Entrenamiento personal 1 a 1: técnica, rutina a tu medida y pautas de alimentación. Primera valoración gratis.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/logo/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="img/logo/favicon-180.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Primer fotograma del hero cuanto antes (si cambias las carpetas, cámbialas aquí también) -->
+  <link rel="preload" as="image" href="img/portada/frames/pc/f001.webp" fetchpriority="high" media="not ((max-width: 800px) and (orientation: portrait))">
+  <link rel="preload" as="image" href="img/portada/frames/movil/f001.webp" fetchpriority="high" media="(max-width: 800px) and (orientation: portrait)">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Necesito experiencia para empezar?", "acceptedAnswer": {"@type": "Answer", "text": "No. La mitad de mis clientes empezaron de cero. Adaptamos todo a tu nivel."}}, {"@type": "Question", "name": "¿Me haces una dieta?", "acceptedAnswer": {"@type": "Answer", "text": "Te doy pautas de alimentación adaptadas a tu objetivo. Si necesitas una dieta clínica, te recomiendo un dietista-nutricionista."}}, {"@type": "Question", "name": "¿Dónde entrenamos?", "acceptedAnswer": {"@type": "Answer", "text": "En el gimnasio en Jerez de la Frontera. Si lo prefieres, también tienes el plan online."}}, {"@type": "Question", "name": "¿Hay permanencia?", "acceptedAnswer": {"@type": "Answer", "text": "No. Pagas mes a mes y puedes cambiar de plan o dejarlo cuando quieras."}}, {"@type": "Question", "name": "¿En cuánto tiempo veré resultados?", "acceptedAnswer": {"@type": "Answer", "text": "Con constancia, la mayoría nota cambios en 4 a 6 semanas."}}, {"@type": "Question", "name": "¿Cómo es la primera sesión?", "acceptedAnswer": {"@type": "Answer", "text": "Una valoración gratis de unos 45 minutos: hablamos de tu objetivo y vemos tu punto de partida."}}]}</script>
+</head>
+<body>
+  <header class="cabecera">
+    <div class="contenedor cabecera__fila">
+      <a class="marca" href="#inicio" aria-label="Inicio"><img class="marca__logo" src="img/logo/logo-claro.png" alt="Álex Vega · Entrenador personal" width="656" height="253"></a>
+      <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-principal"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav-principal" aria-label="Principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#metodo">Método</a>
+        <a href="#planes">Planes</a>
+        <a href="#opiniones">Opiniones</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
+        <a class="boton boton--peq" href="#contacto">Reservar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO: secuencia de fotogramas en canvas enganchada al scroll (configuración en js/main.js) -->
+    <section class="hero seq" id="inicio" data-seq="hero">
+      <div class="seq__sticky">
+        <picture class="seq__poster">
+          <source media="(max-width: 800px) and (orientation: portrait)" srcset="img/portada/portada-movil-poster.jpg">
+          <img src="img/portada/portada-pc-poster.jpg" alt="Entrenador personal en un gimnasio oscuro agarrando una barra olímpica entre polvo de magnesio y luz verde lima" fetchpriority="high">
+        </picture>
+        <canvas class="seq__canvas" aria-hidden="true"></canvas>
+        <div class="seq__velo" aria-hidden="true"></div>
+
+        <!-- Frases escenificadas (decorativas: el texto real está en el H1/subtítulo) -->
+        <div class="frases" aria-hidden="true">
+          <p class="frase frase--intro" data-in="0" data-out="0.08">
+            <span class="antetitulo">Entrenamiento personal · Jerez de la Frontera</span>
+            <span class="pista">Desliza ↓</span>
+          </p>
+          <p class="frase" data-in="0.09" data-out="0.26">Cada repetición <em>cuenta.</em></p>
+          <p class="frase" data-in="0.28" data-out="0.46">Cada gota, <em>también.</em></p>
+          <p class="frase frase--grande" data-in="0.49" data-out="0.735">Hoy empieza <em>el cambio.</em></p>
+        </div>
+
+        <div class="hero__copy seq__final" data-desde="0.74">
+          <h1>Entrena como nunca. <span class="lima">Resultados como siempre quisiste.</span></h1>
+          <div class="hero__pie">
+          <p class="hero__texto">Entrenamiento personal 1 a 1 para perder peso, ganar músculo o empezar de cero. Te enseño la técnica, te preparo la rutina y te doy pautas de alimentación.</p>
+          <ul class="etiquetas" aria-label="Objetivos">
+            <li>Perder peso</li><li>Ganar músculo</li><li>Empezar de cero</li>
+          </ul>
+          <div class="hero__botones">
+            <a class="boton" href="#contacto">Reserva tu primera sesión</a>
+            <a class="boton boton--borde" href="#planes">Ver planes</a>
+          </div>
+          <p class="micro">Primera valoración gratis · Sin permanencia</p>
+          </div>
+        </div>
+
+        <div class="progreso" aria-hidden="true"><i></i></div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ: giro 360° del entrenador enganchado al scroll (mismo motor que el hero; carga diferida) -->
+    <!-- TRANSICIÓN: nube de magnesio lima de la portada al giro (fotogramas de Pixel; se funde con las dos) -->
+    <section class="transicion seq seq--entra" data-seq="transicion" data-entra="fundido" aria-hidden="true">
+      <div class="seq__sticky">
+        <canvas class="seq__canvas"></canvas>
+      </div>
+    </section>
+
+    <section class="sobre seq seq--entra" data-entra="fundido" id="sobre-mi" data-seq="sobre" aria-labelledby="sobre-titulo">
+      <div class="seq__sticky">
+        <picture class="seq__poster">
+          <source media="(max-width: 800px) and (orientation: portrait)" srcset="img/sobre-mi/giro-360-movil-poster.jpg">
+          <img src="img/sobre-mi/giro-360-pc-poster.jpg" alt="Entrenador personal con los brazos cruzados en un gimnasio con luz verde lima" loading="lazy" decoding="async">
+        </picture>
+        <canvas class="seq__canvas" aria-hidden="true"></canvas>
+        <div class="seq__velo" aria-hidden="true"></div>
+
+        <div class="frases" aria-hidden="true">
+          <p class="frase frase--izq" data-in="0.03" data-out="0.24">Más de 10 años <em>entrenando personas.</em></p>
+          <p class="frase frase--der" data-in="0.26" data-out="0.46">Desde cero <em>o desde donde lo dejaste.</em></p>
+          <p class="frase frase--izq" data-in="0.48" data-out="0.67">Contigo en <em>cada serie.</em></p>
+        </div>
+
+        <div class="sobre__final seq__final" data-desde="0.72">
+          <p class="antetitulo">Sobre mí</p>
+          <h2 id="sobre-titulo">Soy Álex. <span class="lima">Tu entrenador.</span></h2>
+          <p class="sobre__texto">Entreno a personas normales con objetivos reales: perder peso, ganar músculo o empezar sin miedo. Te enseño a hacerlo bien, te preparo la rutina y te doy pautas de alimentación que puedas cumplir.</p>
+          <p class="firma">— Álex, entrenador personal</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. OBJETIVOS: franja en bucle + 4 tarjetas (PC: carril horizontal con scroll · móvil: baraja apilada). Botones solo de muestra. -->
+    <section class="objetivos" id="objetivos" aria-labelledby="obj-titulo">
+      <div class="franja" aria-hidden="true"><div class="franja__pista"><span>PERDER PESO · GANAR MÚSCULO · EMPEZAR DE CERO · COMER MEJOR · </span><span>PERDER PESO · GANAR MÚSCULO · EMPEZAR DE CERO · COMER MEJOR · </span><span>PERDER PESO · GANAR MÚSCULO · EMPEZAR DE CERO · COMER MEJOR · </span><span>PERDER PESO · GANAR MÚSCULO · EMPEZAR DE CERO · COMER MEJOR · </span></div></div>
+      <div class="objetivos__carril">
+        <div class="objetivos__sticky">
+          <div class="objetivos__cab contenedor">
+            <p class="antetitulo">Para quién es</p>
+            <h2 id="obj-titulo">¿Cuál es tu <span class="lima">objetivo?</span></h2>
+            <p class="seccion__intro">Vengas de donde vengas, empezamos desde donde estás.</p>
+          </div>
+          <div class="objetivos__pista">
+            <article class="obj">
+              <figure class="obj__foto"><img src="img/objetivos/perder-peso-movil.webp" width="810" height="1080" alt="Álex Vega entrenando con cuerdas de combate en el gimnasio" loading="lazy" decoding="async"></figure>
+              <div class="obj__cuerpo">
+                <span class="obj__num">01</span>
+                <h3>Perder peso</h3>
+                <p>Quema grasa sin pasar hambre ni vivir en la cinta. Fuerza, constancia y pautas de alimentación que puedas cumplir.</p>
+                <div class="obj__botones">
+                  <button type="button" class="boton boton--brillo">Quiero perder peso</button>
+                  <button type="button" class="boton boton--borde">Ver tu plan</button>
+                </div>
+              </div>
+            </article>
+            <article class="obj">
+              <figure class="obj__foto"><img src="img/objetivos/ganar-musculo-movil.webp" width="810" height="1080" alt="Álex Vega haciendo press de hombros con mancuernas" loading="lazy" decoding="async"></figure>
+              <div class="obj__cuerpo">
+                <span class="obj__num">02</span>
+                <h3>Ganar músculo</h3>
+                <p>Más fuerza y más volumen con una rutina pensada para ti, bien ejecutada y con progresión real.</p>
+                <div class="obj__botones">
+                  <button type="button" class="boton boton--brillo">Quiero ganar músculo</button>
+                  <button type="button" class="boton boton--borde">Ver tu plan</button>
+                </div>
+              </div>
+            </article>
+            <article class="obj">
+              <figure class="obj__foto"><img src="img/objetivos/empezar-de-cero-movil.webp" width="810" height="1080" alt="Álex Vega corrigiendo a una alumna en una sentadilla con pesa rusa" loading="lazy" decoding="async"></figure>
+              <div class="obj__cuerpo">
+                <span class="obj__num">03</span>
+                <h3>Empezar de cero</h3>
+                <p>¿Nunca has entrenado? Perfecto. Te enseño cada ejercicio paso a paso, sin miedo y sin lesiones.</p>
+                <div class="obj__botones">
+                  <button type="button" class="boton boton--brillo">Quiero empezar de cero</button>
+                  <button type="button" class="boton boton--borde">Ver tu plan</button>
+                </div>
+              </div>
+            </article>
+            <article class="obj">
+              <figure class="obj__foto"><img src="img/objetivos/comer-mejor-movil.webp" width="810" height="1080" alt="Álex Vega preparando táperes de comida sana" loading="lazy" decoding="async"></figure>
+              <div class="obj__cuerpo">
+                <span class="obj__num">04</span>
+                <h3>Comer mejor</h3>
+                <p>Pautas de alimentación sencillas y adaptadas a tu objetivo. Sin dietas imposibles ni pasar hambre.</p>
+                <div class="obj__botones">
+                  <button type="button" class="boton boton--brillo">Quiero comer mejor</button>
+                  <button type="button" class="boton boton--borde">Ver tu plan</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="objetivos__barra" aria-hidden="true"><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. MÉTODO: 4 pasos unidos por una línea lima que se rellena con el scroll -->
+    <section class="seccion seccion--metodo" id="metodo" aria-labelledby="metodo-titulo">
+      <div class="contenedor">
+        <p class="antetitulo revelar">Método</p>
+        <h2 class="revelar" id="metodo-titulo">Así trabajo <span class="lima">contigo</span></h2>
+        <p class="seccion__intro revelar">Cuatro pasos. Cero improvisación.</p>
+        <ol class="pasos">
+          <li class="pasos__linea" aria-hidden="true"><i></i></li>
+          <li class="paso"><span class="paso__punto" aria-hidden="true"></span><span class="paso__num" aria-hidden="true">01</span><div class="paso__txt"><h3>Valoración</h3><p>Hablamos de tu objetivo, medimos tu punto de partida y vemos cómo te mueves. La primera es gratis.</p></div></li>
+          <li class="paso"><span class="paso__punto" aria-hidden="true"></span><span class="paso__num" aria-hidden="true">02</span><div class="paso__txt"><h3>Plan a medida</h3><p>Diseño tu rutina y tus pautas de alimentación según tu nivel, tu horario y tus gustos.</p></div></li>
+          <li class="paso"><span class="paso__punto" aria-hidden="true"></span><span class="paso__num" aria-hidden="true">03</span><div class="paso__txt"><h3>Entrenamos juntos</h3><p>Te corrijo la técnica en cada serie para que avances rápido y sin lesionarte.</p></div></li>
+          <li class="paso"><span class="paso__punto" aria-hidden="true"></span><span class="paso__num" aria-hidden="true">04</span><div class="paso__txt"><h3>Seguimiento</h3><p>Revisamos tu progreso y ajustamos el plan. Si te estancas, lo cambiamos.</p></div></li>
+        </ol>
+        <p class="centrado revelar"><button type="button" class="boton boton--brillo">Reserva tu primera sesión</button></p>
+      </div>
+    </section>
+
+    <!-- 5. RESULTADOS (datos, nombres y fotos DE EJEMPLO): cifras animadas + antes/después con barra deslizable -->
+    <section class="seccion resultados" id="resultados" aria-labelledby="res-titulo">
+      <div class="contenedor">
+        <p class="antetitulo revelar">Resultados</p>
+        <h2 class="revelar" id="res-titulo">Resultados que <span class="lima">se ven</span></h2>
+        <ul class="cifras revelar">
+          <li><b data-cuenta="150" data-pre="+">0</b><span>clientes entrenados</span></li>
+          <li><b data-cuenta="12" data-pre="-" data-suf=" kg">0</b><span>de media en 6 meses</span></li>
+          <li><b data-cuenta="10">0</b><span>años de experiencia</span></li>
+          <li><b data-cuenta="4.9" data-dec="1" data-suf=" ★">0</b><span>en Google</span></li>
+        </ul>
+        <div class="res revelar">
+          <div class="res__tabs" role="group" aria-label="Elige un cliente"><button type="button" class="res__tab on" data-i="0" aria-pressed="true">Laura</button><button type="button" class="res__tab" data-i="1" aria-pressed="false">Javi</button><button type="button" class="res__tab" data-i="2" aria-pressed="false">Pedro</button></div>
+          <div class="res__marco">
+            <figure class="comp on" data-i="0" style="--pos:50%">
+              <div class="comp__despues" role="img" aria-label="Antes y después de Laura, cliente de ejemplo de Álex Vega"><picture><source media="(max-width: 800px) and (orientation: portrait)" srcset="img/resultados/laura-despues-movil.webp"><img src="img/resultados/laura-despues-pc.webp" alt="" width="1600" height="900" loading="lazy" decoding="async"></picture></div>
+              <div class="comp__antes" aria-hidden="true"><picture><source media="(max-width: 800px) and (orientation: portrait)" srcset="img/resultados/laura-antes-movil.webp"><img src="img/resultados/laura-antes-pc.webp" alt="" width="1600" height="900" loading="lazy" decoding="async"></picture></div>
+              <span class="comp__etq comp__etq--a" aria-hidden="true">Antes</span><span class="comp__etq comp__etq--d" aria-hidden="true">Después</span>
+              <span class="comp__mango" aria-hidden="true"><i></i></span>
+              <input class="comp__rango" type="range" min="0" max="100" value="50" aria-label="Desliza para ver el cambio de Laura">
+              <figcaption><strong>Laura, 34 años</strong> · -14 kg en 7 meses</figcaption>
+            </figure>
+            <figure class="comp" data-i="1" style="--pos:50%">
+              <div class="comp__despues" role="img" aria-label="Antes y después de Javi, cliente de ejemplo de Álex Vega"><picture><source media="(max-width: 800px) and (orientation: portrait)" srcset="img/resultados/javi-despues-movil.webp"><img src="img/resultados/javi-despues-pc.webp" alt="" width="1600" height="900" loading="lazy" decoding="async"></picture></div>
+              <div class="comp__antes" aria-hidden="true"><picture><source media="(max-width: 800px) and (orientation: portrait)" srcset="img/resultados/javi-antes-movil.webp"><img src="img/resultados/javi-antes-pc.webp" alt="" width="1600" height="900" loading="lazy" decoding="async"></picture></div>
+              <span class="comp__etq comp__etq--a" aria-hidden="true">Antes</span><span class="comp__etq comp__etq--d" aria-hidden="true">Después</span>
+              <span class="comp__mango" aria-hidden="true"><i></i></span>
+              <input class="comp__rango" type="range" min="0" max="100" value="50" aria-label="Desliza para ver el cambio de Javi">
+              <figcaption><strong>Javi, 27 años</strong> · +6 kg de músculo en 1 año</figcaption>
+            </figure>
+            <figure class="comp" data-i="2" style="--pos:50%">
+              <div class="comp__despues" role="img" aria-label="Antes y después de Pedro, cliente de ejemplo de Álex Vega"><picture><source media="(max-width: 800px) and (orientation: portrait)" srcset="img/resultados/caso3-despues-movil.webp"><img src="img/resultados/caso3-despues-pc.webp" alt="" width="1600" height="900" loading="lazy" decoding="async"></picture></div>
+              <div class="comp__antes" aria-hidden="true"><picture><source media="(max-width: 800px) and (orientation: portrait)" srcset="img/resultados/caso3-antes-movil.webp"><img src="img/resultados/caso3-antes-pc.webp" alt="" width="1600" height="900" loading="lazy" decoding="async"></picture></div>
+              <span class="comp__etq comp__etq--a" aria-hidden="true">Antes</span><span class="comp__etq comp__etq--d" aria-hidden="true">Después</span>
+              <span class="comp__mango" aria-hidden="true"><i></i></span>
+              <input class="comp__rango" type="range" min="0" max="100" value="50" aria-label="Desliza para ver el cambio de Pedro">
+              <figcaption><strong>Pedro, 45 años</strong> · Empezó de cero · -9 kg y sin dolor de espalda en 5 meses</figcaption>
+            </figure>
+          </div>
+          <p class="res__pista">← Desliza para ver el cambio →</p>
+        </div>
+        <p class="res__aviso">Resultados de ejemplo. Cada cuerpo y cada proceso es distinto.</p>
+      </div>
+    </section>
+
+    <!-- 6. PLANES (provisional: se rehace cuando toque la sección 6) -->
+    <section class="seccion planes" id="planes">
+      <div class="planes__luz" aria-hidden="true"></div>
+      <!-- PRUEBA Pixel: Álex al fondo + «ELIGE» (copia sin esto en /tmp/entrenador-bak-planes) -->
+      <div class="planes__fondo" aria-hidden="true">
+        <span class="planes__elige">ELIGE</span>
+        <div class="planes__alex"><video class="planes__video" src="img/planes/alex-aparece.mp4" poster="img/planes/frames/pc/f001.webp" muted playsinline preload="auto" disablepictureinpicture></video></div>
+      </div>
+      <div class="contenedor">
+        <p class="antetitulo revelar">Planes y precios</p>
+        <h2 class="revelar">Elige cómo quieres <span class="lima">entrenar</span></h2>
+        <p class="seccion__intro revelar">Sin permanencia. Cambia de plan cuando quieras.</p>
+        <div class="planes__rejilla">
+          <article class="plan">
+            <h3 class="plan__nombre">Online</h3>
+            <p class="plan__frase">Tu rutina y tus pautas de alimentación en el móvil.</p>
+            <p class="plan__precio"><b data-cuenta="69">0</b><span>€/mes</span></p>
+            <p class="plan__sub" aria-hidden="true">&nbsp;</p>
+            <ul class="plan__lista"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Plan de entreno a medida</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Pautas de alimentación</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Revisión semanal</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Dudas por WhatsApp</li></ul>
+            <button class="boton boton--borde plan__boton" type="button">Empezar online</button>
+          </article>
+          <article class="plan plan--top">
+            <span class="plan__etiqueta">El más elegido</span><h3 class="plan__nombre">Completo</h3>
+            <p class="plan__frase">Entrenamos juntos y no te dejo solo el resto de la semana.</p>
+            <p class="plan__precio"><b data-cuenta="229">0</b><span>€/mes</span></p>
+            <p class="plan__sub">Sale a menos de 29 € la sesión</p>
+            <ul class="plan__lista"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>2 sesiones presenciales a la semana</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Todo lo del plan Online</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Técnica corregida en cada serie</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Ajustes del plan cada mes</li></ul>
+            <button class="boton boton--brillo plan__boton" type="button">Quiero este plan</button>
+          </article>
+          <article class="plan">
+            <h3 class="plan__nombre">Premium</h3>
+            <p class="plan__frase">Máximo resultado, seguimiento total.</p>
+            <p class="plan__precio"><b data-cuenta="339">0</b><span>€/mes</span></p>
+            <p class="plan__sub" aria-hidden="true">&nbsp;</p>
+            <ul class="plan__lista"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>3 sesiones presenciales a la semana</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Nutrición y seguimiento cercano</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Revisión de progreso cada 15 días</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Todo lo del plan Completo</li></ul>
+            <button class="boton boton--borde plan__boton" type="button">Ir a por todas</button>
+          </article>
+        </div>
+        <div class="planes__puntos" aria-hidden="true"><i></i><i></i><i></i></div>
+        <p class="planes__letra revelar">Sin permanencia · IVA incluido</p>
+        <p class="planes__nota revelar">¿Prefieres probar? Sesión suelta a 35 €. <span class="lima">La primera valoración es gratis.</span></p>
+      </div>
+    </section>
+
+    <section class="seccion opiniones" id="opiniones">
+      <div class="opiniones__fijo">
+        <div class="opiniones__luz" aria-hidden="true"></div>
+        <div class="contenedor opiniones__cabeza">
+          <p class="antetitulo revelar">Opiniones</p>
+          <h2 class="revelar">Lo que dicen <span class="lima">mis clientes</span></h2>
+          <p class="opiniones__nota revelar"><span class="opiniones__media">5,0</span> de media · Opiniones de ejemplo</p>
+        </div>
+        <div class="opiniones__ventana">
+          <div class="opiniones__pista">
+            <figure class="op" style="--i:0">
+              <span class="op__comillas" aria-hidden="true">“</span>
+              <div class="op__estrellas" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5L12 17.5l-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5L12 17.5l-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5L12 17.5l-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5L12 17.5l-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5L12 17.5l-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg></div>
+              <blockquote class="op__texto">«Llevaba años apuntada al gimnasio sin saber qué hacer. Con Álex he notado más cambio en siete meses que en tres años.»</blockquote>
+              <figcaption class="op__pie"><img class="op__avatar" src="img/opiniones/laura.webp" alt="Laura, clienta de Álex Vega, sonriente tras perder 14 kg" width="400" height="400" loading="lazy" decoding="async"><span class="op__quien"><strong>Laura M.</strong><small>Cliente de Álex</small></span><span class="op__dato"><b>-14 kg</b><small>en 7 meses</small></span></figcaption>
+            </figure>
+            <figure class="op" style="--i:1">
+              <span class="op__comillas" aria-hidden="true">“</span>
+              <div class="op__estrellas" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5L12 17.5l-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5L12 17.5l-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5L12 17.5l-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5L12 17.5l-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5L12 17.5l-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg></div>
+              <blockquote class="op__texto">«Empecé sin haber tocado una pesa. Me enseñó la técnica desde cero, ya no me duele la espalda y entreno con confianza.»</blockquote>
+              <figcaption class="op__pie"><img class="op__avatar" src="img/opiniones/pedro.webp" alt="Pedro, cliente de Álex Vega, que empezó a entrenar desde cero" width="400" height="400" loading="lazy" decoding="async"><span class="op__quien"><strong>Pedro R.</strong><small>Cliente de Álex</small></span><span class="op__dato"><b>-9 kg</b><small>y sin dolor de espalda</small></span></figcaption>
+            </figure>
+            <figure class="op" style="--i:2">
+              <span class="op__comillas" aria-hidden="true">“</span>
+              <div class="op__estrellas" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5L12 17.5l-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5L12 17.5l-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5L12 17.5l-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5L12 17.5l-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5L12 17.5l-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg></div>
+              <blockquote class="op__texto">«Lo mejor es el seguimiento: si un día fallo, me lo recuerda. Así es imposible abandonar.»</blockquote>
+              <figcaption class="op__pie"><img class="op__avatar" src="img/opiniones/marta.webp" alt="Marta, clienta de Álex Vega en Jerez de la Frontera" width="400" height="400" loading="lazy" decoding="async"><span class="op__quien"><strong>Marta G.</strong><small>Cliente de Álex</small></span><span class="op__dato"><b>52</b><small>semanas sin fallar</small></span></figcaption>
+            </figure>
+            <figure class="op" style="--i:3">
+              <span class="op__comillas" aria-hidden="true">“</span>
+              <div class="op__estrellas" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5L12 17.5l-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5L12 17.5l-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5L12 17.5l-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5L12 17.5l-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5L12 17.5l-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg></div>
+              <blockquote class="op__texto">«Quería ganar músculo de verdad y en un año lo he conseguido sin una sola lesión.»</blockquote>
+              <figcaption class="op__pie"><img class="op__avatar" src="img/opiniones/javi.webp" alt="Javi, cliente de Álex Vega, tras ganar 6 kg de músculo" width="400" height="400" loading="lazy" decoding="async"><span class="op__quien"><strong>Javi S.</strong><small>Cliente de Álex</small></span><span class="op__dato"><b>+6 kg</b><small>de músculo en 1 año</small></span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="opiniones__barra" aria-hidden="true"><i></i></div>
+      </div>
+    </section>
+
+    <section class="seccion faq" id="faq">
+      <div class="faq__luz" aria-hidden="true"></div>
+      <div class="contenedor faq__rejilla">
+        <div class="faq__lado">
+          <p class="antetitulo revelar">Dudas</p>
+          <h2 class="revelar">Preguntas <span class="lima">frecuentes</span></h2>
+          <p class="faq__intro revelar">Lo que casi todo el mundo me pregunta antes de empezar.</p>
+          <p class="faq__lema revelar" aria-hidden="true">6 preguntas. <span class="lima">6 respuestas.</span></p>
+          <div class="faq__marcador" aria-hidden="true"><span class="faq__cifra" data-n="0">0</span><span class="faq__de">/6<small>dudas resueltas</small></span></div>
+        </div>
+        <div class="faq__lista">
+          <div class="pregunta" style="--i:0">
+            <h3 class="pregunta__titulo"><button type="button" class="pregunta__boton" aria-expanded="false" aria-controls="r1" id="p1"><span class="pregunta__num">01</span><span class="pregunta__texto">¿Necesito experiencia para empezar?</span><span class="pregunta__icono" aria-hidden="true"></span></button></h3>
+            <div class="pregunta__resp" id="r1" role="region" aria-labelledby="p1"><div><p>No. La mitad de mis clientes empezaron de cero. Adaptamos todo a tu nivel.</p></div></div>
+          </div>
+          <div class="pregunta" style="--i:1">
+            <h3 class="pregunta__titulo"><button type="button" class="pregunta__boton" aria-expanded="false" aria-controls="r2" id="p2"><span class="pregunta__num">02</span><span class="pregunta__texto">¿Me haces una dieta?</span><span class="pregunta__icono" aria-hidden="true"></span></button></h3>
+            <div class="pregunta__resp" id="r2" role="region" aria-labelledby="p2"><div><p>Te doy pautas de alimentación adaptadas a tu objetivo. Si necesitas una dieta clínica, te recomiendo un dietista-nutricionista.</p></div></div>
+          </div>
+          <div class="pregunta" style="--i:2">
+            <h3 class="pregunta__titulo"><button type="button" class="pregunta__boton" aria-expanded="false" aria-controls="r3" id="p3"><span class="pregunta__num">03</span><span class="pregunta__texto">¿Dónde entrenamos?</span><span class="pregunta__icono" aria-hidden="true"></span></button></h3>
+            <div class="pregunta__resp" id="r3" role="region" aria-labelledby="p3"><div><p>En el gimnasio en Jerez de la Frontera. Si lo prefieres, también tienes el plan online.</p></div></div>
+          </div>
+          <div class="pregunta" style="--i:3">
+            <h3 class="pregunta__titulo"><button type="button" class="pregunta__boton" aria-expanded="false" aria-controls="r4" id="p4"><span class="pregunta__num">04</span><span class="pregunta__texto">¿Hay permanencia?</span><span class="pregunta__icono" aria-hidden="true"></span></button></h3>
+            <div class="pregunta__resp" id="r4" role="region" aria-labelledby="p4"><div><p>No. Pagas mes a mes y puedes cambiar de plan o dejarlo cuando quieras.</p></div></div>
+          </div>
+          <div class="pregunta" style="--i:4">
+            <h3 class="pregunta__titulo"><button type="button" class="pregunta__boton" aria-expanded="false" aria-controls="r5" id="p5"><span class="pregunta__num">05</span><span class="pregunta__texto">¿En cuánto tiempo veré resultados?</span><span class="pregunta__icono" aria-hidden="true"></span></button></h3>
+            <div class="pregunta__resp" id="r5" role="region" aria-labelledby="p5"><div><p>Con constancia, la mayoría nota cambios en 4 a 6 semanas.</p></div></div>
+          </div>
+          <div class="pregunta" style="--i:5">
+            <h3 class="pregunta__titulo"><button type="button" class="pregunta__boton" aria-expanded="false" aria-controls="r6" id="p6"><span class="pregunta__num">06</span><span class="pregunta__texto">¿Cómo es la primera sesión?</span><span class="pregunta__icono" aria-hidden="true"></span></button></h3>
+            <div class="pregunta__resp" id="r6" role="region" aria-labelledby="p6"><div><p>Una valoración gratis de unos 45 minutos: hablamos de tu objetivo y vemos tu punto de partida.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion contacto" id="contacto">
+      <div class="contacto__luz" aria-hidden="true"></div>
+      <div class="contenedor">
+        <p class="antetitulo revelar">Contacto</p>
+        <h2 class="contacto__titulo">Tu primera sesión <span class="lima">es gratis</span></h2>
+        <p class="seccion__intro revelar">Escríbeme y buscamos un hueco esta misma semana.</p>
+        <div class="contacto__rejilla">
+          <form class="formu" novalidate>
+            <div class="formu__campos">
+              <label class="campo"><input type="text" name="nombre" autocomplete="name" placeholder=" " required><span>Nombre</span></label>
+              <label class="campo"><input type="tel" name="telefono" autocomplete="tel" inputmode="tel" placeholder=" " required><span>Teléfono</span></label>
+              <label class="campo campo--select"><select name="objetivo" required><option value="" selected disabled hidden></option><option>Perder peso</option><option>Ganar músculo</option><option>Empezar de cero</option><option>Comer mejor</option></select><span>Objetivo</span></label>
+              <label class="campo"><textarea name="mensaje" rows="3" placeholder=" "></textarea><span>Mensaje (opcional)</span></label>
+            </div>
+            <label class="casilla"><input type="checkbox" name="privacidad" required><i aria-hidden="true"></i><span>He leído y acepto la política de privacidad.</span></label>
+            <button type="submit" class="boton boton--brillo formu__boton"><span class="formu__txt">Reservar mi valoración gratis</span><span class="formu__carga" aria-hidden="true"></span><svg class="formu__check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg></button>
+            <p class="formu__estado" role="status" aria-live="polite"></p>
+          </form>
+          <aside class="contacto__info">
+            <button type="button" class="boton contacto__wa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.4-.2z"/></svg><span>Escríbeme por WhatsApp</span></button>
+            <figure class="contacto__foto"><picture><source media="(max-width:600px)" srcset="img/contacto/foto/alex-estudio-cuadrada.webp"><img src="img/contacto/foto/alex-estudio-pc.webp" alt="Álex Vega, entrenador personal en Jerez de la Frontera, sonriendo junto a un estante de mancuernas" width="1600" height="900" loading="lazy"></picture></figure>
+            <ul class="contacto__datos">
+              <li><b>Dónde</b><span>Gimnasio en Jerez de la Frontera (Cádiz)</span></li>
+              <li><b>Horario</b><span>Lunes a viernes 7:00–22:00 · Sábados 9:00–14:00</span></li>
+            </ul>
+            <p class="contacto__aviso">Datos de ejemplo · Demo</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="ruta" id="ruta" aria-hidden="true">
+      <div class="ruta__fijo">
+        <svg class="ruta__svg ruta__svg--pc" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<defs><filter id="rg-ruta__svg--pc" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="6"/></filter><filter id="mg-ruta__svg--pc" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<image class="ruta__mapa" href="img/contacto/ruta/mapa-ficticio-pc.webp" width="1920" height="1080"/>
+<path class="ruta__base" d="M 60,940 L 280,940 L 280,540 L 860,540 C 880,600 910,640 960,640 C 1010,640 1040,600 1060,540 L 1480,540 L 1620,540"/>
+<path class="ruta__glow" d="M 60,940 L 280,940 L 280,540 L 860,540 C 880,600 910,640 960,640 C 1010,640 1040,600 1060,540 L 1480,540 L 1620,540" filter="url(#rg-ruta__svg--pc)"/>
+<path class="ruta__linea" d="M 60,940 L 280,940 L 280,540 L 860,540 C 880,600 910,640 960,640 C 1010,640 1040,600 1060,540 L 1480,540 L 1620,540"/>
+<g class="ruta__meta" transform="translate(1620 540)"><circle class="ruta__onda" r="40"/><circle class="ruta__onda ruta__onda--2" r="40"/><circle class="ruta__onda ruta__onda--3" r="40"/><circle class="ruta__centro" r="10"/></g>
+<g class="mu"><g class="mu__giro"><g class="mu__cuerpo" filter="url(#mg-ruta__svg--pc)"><g class="mu__f" data-f="0"><circle cx="60" cy="34.0" r="15" fill="#C6FF00"/>
+<path d="M 62.0,48.0 L 58.8,100.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round"/>
+<path d="M 58.8,100.0 L 40.8,118.0 L 24.8,136.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 58.8,100.0 L 84.8,122.0 L 100.8,148.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,48.0 L 84.0,67.4 L 102.0,85.6" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,48.0 L 42.0,69.4 L 28.0,93.6" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g><g class="mu__f" data-f="1"><circle cx="60" cy="34.0" r="15" fill="#C6FF00"/>
+<path d="M 62.0,48.0 L 60.0,100.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round"/>
+<path d="M 60.0,100.0 L 72.0,112.0 L 90.0,120.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 60.0,100.0 L 66.0,124.0 L 60.0,148.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,48.0 L 68.0,73.4 L 66.0,95.6" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,48.0 L 52.0,73.4 L 54.0,95.6" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g><g class="mu__f" data-f="2"><circle cx="60" cy="33.0" r="15" fill="#C6FF00"/>
+<path d="M 62.0,46.8 L 61.2,94.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round"/>
+<path d="M 61.2,94.0 L 91.2,108.0 L 109.2,124.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 61.2,94.0 L 45.2,118.0 L 35.2,142.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,46.8 L 38.0,64.2 L 22.0,86.2" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,46.8 L 86.0,60.2 L 106.0,74.2" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g><g class="mu__f" data-f="3"><circle cx="60" cy="34.0" r="15" fill="#C6FF00"/>
+<path d="M 62.0,48.0 L 58.8,100.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round"/>
+<path d="M 58.8,100.0 L 84.8,122.0 L 100.8,148.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 58.8,100.0 L 40.8,118.0 L 24.8,136.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,48.0 L 42.0,69.4 L 28.0,93.6" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,48.0 L 84.0,67.4 L 102.0,85.6" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g><g class="mu__f mu__celebra"><circle cx="60" cy="34" r="15" fill="#C6FF00"/>
+<path d="M 60,50 L 60,98" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round"/>
+<path d="M 60,98 L 52,124 L 50,148" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 60,98 L 68,124 L 70,148" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 60,50 L 36,40 L 22,14" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 60,50 L 84,40 L 98,14" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g></g></g></g>
+</svg>
+        <svg class="ruta__svg ruta__svg--movil" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<defs><filter id="rg-ruta__svg--movil" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="6"/></filter><filter id="mg-ruta__svg--movil" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<image class="ruta__mapa" href="img/contacto/ruta/mapa-ficticio-movil.webp" width="1080" height="1920"/>
+<path class="ruta__base" d="M 50,240 L 180,240 L 180,700 L 540,700 L 540,1010 C 500,1040 452,1070 452,1100 C 452,1160 490,1188 540,1188 C 590,1188 628,1160 628,1100 L 628,1100 L 900,1100 L 900,1430 L 540,1430"/>
+<path class="ruta__glow" d="M 50,240 L 180,240 L 180,700 L 540,700 L 540,1010 C 500,1040 452,1070 452,1100 C 452,1160 490,1188 540,1188 C 590,1188 628,1160 628,1100 L 628,1100 L 900,1100 L 900,1430 L 540,1430" filter="url(#rg-ruta__svg--movil)"/>
+<path class="ruta__linea" d="M 50,240 L 180,240 L 180,700 L 540,700 L 540,1010 C 500,1040 452,1070 452,1100 C 452,1160 490,1188 540,1188 C 590,1188 628,1160 628,1100 L 628,1100 L 900,1100 L 900,1430 L 540,1430"/>
+<g class="ruta__meta" transform="translate(540 1430)"><circle class="ruta__onda" r="40"/><circle class="ruta__onda ruta__onda--2" r="40"/><circle class="ruta__onda ruta__onda--3" r="40"/><circle class="ruta__centro" r="10"/></g>
+<g class="mu"><g class="mu__giro"><g class="mu__cuerpo" filter="url(#mg-ruta__svg--movil)"><g class="mu__f" data-f="0"><circle cx="60" cy="34.0" r="15" fill="#C6FF00"/>
+<path d="M 62.0,48.0 L 58.8,100.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round"/>
+<path d="M 58.8,100.0 L 40.8,118.0 L 24.8,136.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 58.8,100.0 L 84.8,122.0 L 100.8,148.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,48.0 L 84.0,67.4 L 102.0,85.6" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,48.0 L 42.0,69.4 L 28.0,93.6" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g><g class="mu__f" data-f="1"><circle cx="60" cy="34.0" r="15" fill="#C6FF00"/>
+<path d="M 62.0,48.0 L 60.0,100.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round"/>
+<path d="M 60.0,100.0 L 72.0,112.0 L 90.0,120.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 60.0,100.0 L 66.0,124.0 L 60.0,148.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,48.0 L 68.0,73.4 L 66.0,95.6" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,48.0 L 52.0,73.4 L 54.0,95.6" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g><g class="mu__f" data-f="2"><circle cx="60" cy="33.0" r="15" fill="#C6FF00"/>
+<path d="M 62.0,46.8 L 61.2,94.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round"/>
+<path d="M 61.2,94.0 L 91.2,108.0 L 109.2,124.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 61.2,94.0 L 45.2,118.0 L 35.2,142.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,46.8 L 38.0,64.2 L 22.0,86.2" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,46.8 L 86.0,60.2 L 106.0,74.2" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g><g class="mu__f" data-f="3"><circle cx="60" cy="34.0" r="15" fill="#C6FF00"/>
+<path d="M 62.0,48.0 L 58.8,100.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round"/>
+<path d="M 58.8,100.0 L 84.8,122.0 L 100.8,148.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 58.8,100.0 L 40.8,118.0 L 24.8,136.0" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,48.0 L 42.0,69.4 L 28.0,93.6" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.0,48.0 L 84.0,67.4 L 102.0,85.6" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g><g class="mu__f mu__celebra"><circle cx="60" cy="34" r="15" fill="#C6FF00"/>
+<path d="M 60,50 L 60,98" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round"/>
+<path d="M 60,98 L 52,124 L 50,148" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 60,98 L 68,124 L 70,148" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 60,50 L 36,40 L 22,14" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 60,50 L 84,40 L 98,14" fill="none" stroke="#C6FF00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g></g></g></g>
+</svg>
+        <div class="ruta__frases" aria-hidden="true">
+          <p class="ruta__frase" data-in="0.02" data-out="0.32">Sal de casa.</p>
+          <p class="ruta__frase" data-in="0.38" data-out="0.72">Un paso. <span class="lima">Otro más.</span></p>
+          <p class="ruta__frase ruta__frase--meta" data-in="0.9" data-out="2">¡Meta! <span class="lima">Aquí entrenamos.</span></p>
+        </div>
+        <p class="ruta__etiqueta" aria-hidden="true">Gimnasio Álex Vega · Jerez de la Frontera <small>(ejemplo)</small></p>
+        <p class="ruta__aviso">Mapa de ejemplo</p>
+      </div>
+    </section>
+
+
+  </main>
+
+      <section class="cta" id="empezamos" aria-labelledby="cta-titulo">
+      <div class="cta__fijo">
+        <video class="cta__chispas" muted playsinline loop preload="metadata" aria-hidden="true" poster="img/cta/cta-chispas-pc-poster.jpg" data-pc="img/cta/cta-chispas-pc.mp4" data-movil="img/cta/cta-chispas-movil.mp4" data-ppc="img/cta/cta-chispas-pc-poster.jpg" data-pmovil="img/cta/cta-chispas-movil-poster.jpg"></video>
+        <video class="cta__rayo" muted playsinline preload="auto" aria-hidden="true" data-pc="img/cta/cta-rayo-pc.mp4" data-movil="img/cta/cta-rayo-movil.mp4"></video>
+        <div class="cta__neon" aria-hidden="true">
+          <span class="cta__palabra" data-in="0.02" data-out="0.17">HOY.</span>
+          <span class="cta__palabra" data-in="0.17" data-out="0.32">NO EL LUNES.</span>
+          <span class="cta__palabra cta__palabra--lima" data-in="0.32" data-out="0.47">HOY.</span>
+        </div>
+        <div class="cta__final">
+          <h2 class="cta__titulo" id="cta-titulo"><span>¿EMPEZAMOS?</span></h2>
+          <p class="cta__sub">Primera valoración gratis · Sin permanencia · Respuesta en menos de 24 horas</p>
+          <div class="cta__acciones">
+            <button type="button" class="cta__wa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.4-.2z"/></svg><span>Escríbeme por WhatsApp</span></button>
+            <div class="cta__chat" aria-live="polite">
+              <div class="cta__burbuja"><span class="cta__escribiendo" aria-hidden="true"><i></i><i></i><i></i></span><span class="cta__texto"></span><small class="cta__hora">ahora <b>✓✓</b></small></div>
+              <small class="cta__demo">Demo: no se envía ningún mensaje.</small>
+            </div>
+            <a class="cta__form" href="#contacto">Prefiero rellenar el formulario</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <footer class="pie">
+    <div class="pie__luz" aria-hidden="true"></div>
+    <div class="pie__gigante" aria-hidden="true"><span>ÁLEX VEGA</span></div>
+    <div class="contenedor pie__rejilla">
+      <div class="pie__marca">
+        <img class="marca__logo pie__logo" src="img/logo/logo-claro.png" alt="Álex Vega · Entrenador personal" width="656" height="253" loading="lazy">
+        <p class="pie__titulo">ÁLEX VEGA · ENTRENADOR PERSONAL</p>
+        <p>Entrenamiento personal en Jerez de la Frontera.</p>
+      </div>
+      <nav class="pie__nav" aria-label="Pie de página">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#planes">Planes</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <nav class="pie__legal" aria-label="Legal">
+        <a href="#" data-demo>Aviso legal</a>
+        <a href="#" data-demo>Privacidad</a>
+        <a href="#" data-demo>Cookies</a>
+      </nav>
+      <button type="button" class="pie__arriba" aria-label="Volver arriba"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+    </div>
+    <div class="contenedor pie__base">
+      <p class="pie__copy">© <span id="anio"></span> <span data-marca>ÁLEX VEGA</span> · Demo creada por <b>landing now</b></p>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
