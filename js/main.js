@@ -176,7 +176,7 @@ const CONFIG = {
       const im = imgs[k]; if (!listo(im) || k === pintado) return;
       const cw = canvas.width, ch = canvas.height, r = Math.max(cw / im.naturalWidth, ch / im.naturalHeight);
       const w = im.naturalWidth * r, h = im.naturalHeight * r;
-      g.drawImage(im, (cw - w) / 2, (ch - h) / 2, w, h); pintado = k;
+      g.drawImage(im, (cw - w) / 2, (ch - h) * 0.15, w, h);   // si sobra alto, se recorta sobre todo por abajo (no se cortan cabezas) pintado = k;
       canvas.classList.add("lista");
     };
     const ajustar = () => {
@@ -242,10 +242,10 @@ const CONFIG = {
     const ease = (x) => x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
     return () => {
       const top = sig.getBoundingClientRect().top, H = innerHeight;
-      if (top > H + 50 || top < -50) { sb.style.clipPath = ""; sb.style.transform = ""; sb.style.opacity = top > H ? "0" : ""; return; }
+      sb.classList.toggle("seq__sticky--fija", top > 0 && top <= H + 50);   // fija por CSS: sin saltos con la rueda del ratón
+      if (top > H + 50 || top < -50) { sb.style.clipPath = ""; sb.style.opacity = top > H ? "0" : ""; return; }
       const t = clamp(1 - top / H), e = ease(t);
       const w = sb.clientWidth, h = sb.clientHeight, R = e * Math.hypot(w, h) * 0.56;
-      sb.style.transform = `translateY(${-Math.max(top, 0)}px)`;
       if (fundido) { const f = clamp(t * 2.5); sb.style.opacity = f >= 1 ? "" : f.toFixed(3); textos.forEach((x) => { x.style.filter = `opacity(${clamp(1 - t * 2.2).toFixed(3)})`; }); return; }
       sb.style.clipPath = t >= 1 ? "none" : `circle(${R.toFixed(1)}px at 50% 55%)`;
       capas.forEach((c) => { c.style.transform = `scale(${(1 + e * 0.22).toFixed(4)})`; c.style.filter = `brightness(${(1 - e * 0.65).toFixed(3)}) blur(${(e * 6).toFixed(1)}px)`; });
